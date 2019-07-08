@@ -13,30 +13,33 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Hello. I'm Jami Gibbs."
-email: 'jami0821@gmail.com'
-description: "I'm a software developer and designer from Chicago creating useful things for the web."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jamigibbs.github.io/phantom" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 'jamigibbs'
-github_username: 'jamigibbs'
-medium_username: 'blog.jamigibbs.com'
+title: "Pavel Tokmakov"
+email: 'pvtokmakov@gmail.com'
+description: "I am currently a postdoc at CMU working with Martial Hebert and Deva Ramanan. My main research interest can be summarized as integrating external knowledge and structure into deep learning models."
+
+description1: "I completed my PhD at Inria, France under Cordelia Schmid's and Karteek Alahari's supervision, studying the role of motion in object recognition. Prior to PhD I worked on statistical relational learning and interactive knowledge discovery.  You can find my CV "
+
+baseurl: "/home" # the subpath of your site, e.g. /blog
+url: "https://pvtokmakov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username: 
+medium_username: 
 
 # Build settings
 markdown: kramdown
-# theme: phantom # Uncomment once published to RubyGems
+theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate
 
 ### Phantom settings
 paginate: 10
-footer_text: '© 2018 Jami Gibbs'
-admin_name: 'Jami Gibbs'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+footer_text: '© 2019 Pavel Tokmakov'
+admin_name: 'Pavel Tokmakov'
+google_analytics: 
 enable_contact: false
 
 #### Phantom Navigation menu
-enable_nav: true
+enable_nav: false
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }

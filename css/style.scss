@@ -108,7 +108,7 @@ button.btn, input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 10em 0 0em 0;
   @include bp-xsmall {
     margin: 5em 0 5em 0;
   }
@@ -202,12 +202,12 @@ button.btn, input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 10em;
+  margin-top: 0em;
   @include bp-xsmall {
-    margin-top: 2em;
+    margin-top: 0em;
   }
   .break {
-    margin: 8em 0;
+    margin: 4em 0;
     @include bp-xsmall {
       margin: 2em 0;
     }
@@ -218,19 +218,7 @@ button.btn, input.btn {
   position: relative;
   margin: 0 auto;
   margin-bottom: 1em;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1.35em;
-    width: 3em;
-    height: 3px;
-    background-color: #ECEFF1;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
-}
 
 .section-subtitle {
   width: 40%;
@@ -260,7 +248,7 @@ button.btn, input.btn {
     }
   }
   .content {
-    margin-top: 5em;
+    margin-top: -1em;
     margin-left: 5em;
     @include bp-xsmall {
       margin-left: 0;
@@ -268,24 +256,16 @@ button.btn, input.btn {
     h3.title {
       position: relative;
       margin-bottom: 1.5em;
-      &:after {
-        content: '';
-        position: absolute;
-        top: 1.5em;
-        left: 0;
-        width: 3em;
-        height: 3px;
-        background-color: #ECEFF1;
-      }
+      
     }
     .excerpt {
-      width: 80%;
+      width: 90%;
       @include bp-xsmall {
         width: 100%;
       }
     }
     button{
-      font-size: 16px;
+      font-size: 16flaskpx;
       margin-left: 0;
       margin-bottom: 1em;
       margin-top: 1em;

@@ -4,8 +4,14 @@
   <p class="excerpt">{{ post.lead_text }}</p>
 
   {% if post.project_link != empty %}
-  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg"><i class="fa fa-{{post.button_icon}} fa-lg"></i>{{post.button_text}}</button></a>
-  {% endif %}
+  <a href="{{ post.project_link }}" class="project-link"><button class="btn btn-default btn-lg">{{post.button_text}}</button></a>
+   {% endif %}
+  {% if post.code_link != empty %} 
+ <a href="{{ post.code_link }}" class="project-link"><button class="btn btn-default btn-lg">{{post.code_text}}</button></a>
+   {% endif %}
+   {% if post.site_link != empty %}
+   <a href="{{ post.site_link }}" class="project-link"><button class="btn btn-default btn-lg">{{post.project_text}}</button></a>
+ {% endif %}
 
   {% if post.tags != empty %}
   <div class="tags">
