@@ -5,7 +5,7 @@ title: 'Relational linear programming'
 date: 2016-02-14 21:15:00
 categories: 
 tags: 
-featured_image: '/img/posts/relational.png'
+featured_image: '/home/img/posts/relational.png'
 project_link: 'https://www.sciencedirect.com/science/article/pii/S0004370215001010'
 button_icon: 'flask'
 button_text: 'Paper'

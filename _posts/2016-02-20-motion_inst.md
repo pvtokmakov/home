@@ -5,7 +5,7 @@ title: 'Towards segmenting anything that moves'
 date: 2016-02-17 21:15:00
 categories: 
 tags: 
-featured_image: '/img/posts/achal1.png'
+featured_image: '/home/img/posts/achal1.png'
 project_link: 'https://arxiv.org/pdf/1902.03715.pdf'
 button_icon: 'flask'
 button_text: 'Paper'
