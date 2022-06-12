@@ -19,7 +19,7 @@ description: "I am currently a Research Scientist at Toyota Research Institute, 
 
 description1: "I completed my PhD at Inria, France under Cordelia Schmid's and Karteek Alahari's supervision, studying the role of motion in object recognition. Prior to PhD I worked on statistical relational learning and interactive knowledge discovery.  You can find my CV "
 
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://pvtokmakov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: 
