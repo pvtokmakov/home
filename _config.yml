@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Pavel Tokmakov"
 email: 'pvtokmakov@gmail.com'
-description: "I am currently a Research Scientist at Toyota Research Institute, where I study object perception in videos. Prior to that I was a postdoc at CMU working with Martial Hebert and Deva Ramanan."
+description: "I am currently a Senior Research Scientist at Toyota Research Institute, where I am leading the video representation learning research direction. Prior to that I was a postdoc at CMU working with Martial Hebert and Deva Ramanan."
 
 description1: "I completed my PhD at Inria, France under Cordelia Schmid's and Karteek Alahari's supervision, studying the role of motion in object recognition. Prior to PhD I worked on statistical relational learning and interactive knowledge discovery.  You can find my CV "
 
