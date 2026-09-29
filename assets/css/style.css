@@ -282,7 +282,14 @@ footer {
   header { flex-direction: column; gap: 20px; align-items: center; text-align: left; }
   .headshot { width: 170px; height: 170px; }
   .pub { flex-direction: column; gap: 14px; padding: 18px; }
-  .teaser { max-width: 100%; aspect-ratio: 16 / 9; }
+  .teaser { max-width: 100%; }
+  /* Only empty placeholders get a forced aspect */
+  .teaser:not(:has(img)):not(:has(video)) { aspect-ratio: 16 / 9; }
+  /* Real media teasers scale to natural aspect — drop desktop height caps */
+  .teaser:has(img), .teaser:has(video) { max-height: none; }
+  .teaser img, .teaser video { max-height: none; }
+  .teaser.teaser-quad img, .teaser.teaser-quad video { max-height: none; }
+  .teaser.teaser-grid img, .teaser.teaser-grid video { max-height: none; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.35rem; margin: 40px 0 20px; }
 }
