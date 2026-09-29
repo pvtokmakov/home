@@ -1,5 +1,394 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavel Tokmakov</title>
+  <meta name="description" content="Pavel Tokmakov — Senior Research Scientist at Toyota Research Institute. World models, embodied AI, robot learning, video understanding.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
 
-<!-- BLANK -->
+  <header>
+    <img class="headshot" src="img/pavel.jpg" alt="Pavel Tokmakov">
+    <div class="intro">
+      <h1>Pavel Tokmakov</h1>
+      <p class="affiliation">Senior Research Scientist, Toyota Research Institute</p>
+      <p class="bio">I lead research on <strong>world models for embodied AI</strong>: learning predictive models of the physical world from large-scale video and leveraging them to advance robot learning. Previously I was a postdoc at CMU with Martial Hebert and Deva Ramanan, and completed my PhD at Inria under the supervision of Cordelia Schmid and Karteek Alahari.</p>
+      <p class="links-row">
+        <a href="mailto:pavel.tokmakov@tri.global">Email</a><span class="sep">·</span>
+        <a href="https://scholar.google.fr/citations?user=b15vJuEAAAAJ&amp;hl=en">Scholar</a><span class="sep">·</span>
+        <a href="img/cv_8.pdf">CV</a>
+      </p>
+    </div>
+  </header>
+
+  <section id="publications">
+
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <div class="teaser teaser-stack">
+        <video autoplay muted loop playsinline preload="metadata"><source src="img/teasers/30k_rigid_board_ours.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="img/teasers/30k_fanguard_ours.mp4" type="video/mp4"></video>
+      </div>
+      <div class="pub-body">
+        <h3><a href="#">What 30,000 Hours of Ego-centric Video Does Not Teach</a></h3>
+        <p class="authors">Jiahua Dong, Anurag Bagchi, Yash Jangir, Zubair Irshad, Sergey Zakharov, Martial Hebert, Homanga Bharadhwaj, Yu-Xiong Wang, Vitor Guizilini, <strong>Pavel Tokmakov</strong></p>
+        <p class="venue">Preprint, 2026</p>
+        <p class="tldr">How far does scaling ego-centric human video take world models? Using 30,000 hours across 1,000+ scene types, we find that scaling brings agent modeling near saturation but leaves object dynamics far behind — closing this gap depends on how models are trained, not on data alone.</p>
+        <p class="pub-links">
+          <!-- TODO: add arXiv link once posted -->
+          <a href="#">paper</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser teaser-stack">
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://gpwm.github.io/media/rw_pilevs_ours_ep036.b177f887e4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://gpwm.github.io/media/rw_pushvs_ep05_ours.a3a6cb673a.mp4" type="video/mp4"></video>
+      </div>
+      <div class="pub-body">
+        <h3><a href="https://gpwm.github.io/">GPWM: Generative Particle World Models for 3D Prediction and Planning</a></h3>
+        <p class="authors">Robert Ren, Matthew Bronars, He Zhu, Sergey Zakharov, <strong>Pavel Tokmakov</strong>, Katerina Fragkiadaki</p>
+        <p class="venue">Preprint, 2026</p>
+        <p class="tldr">A generative world model that learns 3D physical dynamics from particle trajectories across rigid, deformable, cloth, and granular materials. Beyond prediction, GPWM supports contact-rich planning by backpropagating goal rewards through the learned dynamics.</p>
+        <p class="pub-links">
+          <a href="https://gpwm.github.io/">project</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser teaser-quad">
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://egowm.github.io/assets/realw/rw4/pred_9.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://egowm.github.io/assets/resized_cosmos_manip/Pred_sample_134_33080_33182.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://egowm.github.io/assets/painting_3dof_nav/wan_2/pred_24_1.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://egowm.github.io/assets/painting_manip/sample_1/pred_1.mp4" type="video/mp4"></video>
+      </div>
+      <div class="pub-body">
+        <h3><a href="https://egowm.github.io/">Walk Through Paintings: Ego-centric World Models from Internet Priors</a></h3>
+        <p class="authors">Anurag Bagchi, Zhipeng Bao, Homanga Bharadhwaj, Yu-Xiong Wang, <strong>Pavel Tokmakov</strong>*, Martial Hebert*</p>
+        <p class="venue">ECCV, 2026</p>
+        <p class="tldr">We present the Egocentric World Model (EgoWM), a simple, architecture-agnostic method that transforms any pre-trained video diffusion model into an action-conditioned world model, enabling precisely controllable future prediction from a first-person view.</p>
+        <p class="pub-links">
+          <a href="https://egowm.github.io/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2601.15284">paper</a><span class="sep">·</span>
+          <a href="https://github.com/miccooper9/egowm">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser teaser-stack">
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://tri-ml.github.io/AnyView/figures_nogt/6_Robot/3_IR_ID.mp4" type="video/mp4"></video>
+        <video autoplay muted loop playsinline preload="metadata"><source src="https://tri-ml.github.io/AnyView/figures_nogt/1_Teaser/1_In_AnyView_GT.mp4" type="video/mp4"></video>
+      </div>
+      <div class="pub-body">
+        <h3><a href="https://tri-ml.github.io/AnyView/">AnyView: Synthesizing Any Novel View in Dynamic Scenes</a></h3>
+        <p class="authors">Basile Van Hoorick, Dian Chen, Shun Iwase, <strong>Pavel Tokmakov</strong>, Muhammad Zubair Irshad, Igor Vasiljevic, Swati Gupta, Fangzhou Cheng, Sergey Zakharov, Vitor Guizilini</p>
+        <p class="venue">ECCV, 2026</p>
+        <p class="tldr">A diffusion-based framework for dynamic view synthesis with minimal geometric assumptions, capable of producing zero-shot novel videos from arbitrary camera locations and trajectories — even under extreme viewpoint changes where input and output have little overlap.</p>
+        <p class="pub-links">
+          <a href="https://tri-ml.github.io/AnyView/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2601.16982">paper</a><span class="sep">·</span>
+          <a href="https://github.com/TRI-ML/AnyView-DVS">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="https://dongjiahua.github.io/CVESC/static/images/state_prediction_teaser.png" alt="CVESC"></div>
+      <div class="pub-body">
+        <h3><a href="https://dongjiahua.github.io/CVESC/">Capturing Visual Environment Structure Correlates with Control Performance</a></h3>
+        <p class="authors">Jiahua Dong, Yunze Man, <strong>Pavel Tokmakov</strong>*, Yu-Xiong Wang*</p>
+        <p class="venue">ICLR, 2026</p>
+        <p class="tldr">The choice of visual representation is key to scaling generalist robot policies, but direct evaluation via policy rollouts is expensive even in simulation. We show that how well a representation captures visual environment structure correlates with downstream control performance.</p>
+        <p class="pub-links">
+          <a href="https://dongjiahua.github.io/CVESC/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2602.04880">paper</a><span class="sep">·</span>
+          <a href="https://github.com/Dongjiahua/CVESC">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="https://toyotaresearchinstitute.github.io/lbm1/videos/apple.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://toyotaresearchinstitute.github.io/lbm1/">A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation</a></h3>
+        <p class="authors">TRI LBM Team</p>
+        <p class="venue">Science Robotics, 2026</p>
+        <p class="tldr">Large Behavior Models take in robot sensor data and output actions. We show that pretraining on diverse manipulation datasets enables robots to learn new tasks with 3–5× less data while improving steadily as data increases.</p>
+        <p class="pub-links">
+          <a href="https://toyotaresearchinstitute.github.io/lbm1/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2507.05331">paper</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="https://videopolicy.cs.columbia.edu/assets/videos/realworld_demos/open_drawer_UO_processed_labeled.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://videopolicy.cs.columbia.edu/">Video Generators Are Robust Robot Policies</a></h3>
+        <p class="authors">Junbang Liang, <strong>Pavel Tokmakov</strong>, Ruoshi Liu, Ege Ozguroglu, Sruthi Sudhakar, Paarth Shah, Rares Ambrus, Carl Vondrick</p>
+        <p class="venue">arXiv, 2025</p>
+        <p class="tldr">Pretrained video generators serve as robust visuomotor policies, generalizing under perceptual and behavioral distribution shifts where standard visuomotor policies fail — without relying on additional human demonstration data.</p>
+        <p class="pub-links">
+          <a href="https://videopolicy.cs.columbia.edu/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2508.00795">paper</a><span class="sep">·</span>
+          <a href="https://github.com/cvlab-columbia/videopolicy">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser teaser-grid">
+        <img src="https://refereverything.github.io/static/teasers/tt11.gif" alt="ReferEverything">
+        <img src="https://refereverything.github.io/static/teasers/tt7.gif" alt="ReferEverything">
+      </div>
+      <div class="pub-body">
+        <h3><a href="https://refereverything.github.io/">ReferEverything: Towards Segmenting Everything We Can Speak of in Videos</a></h3>
+        <p class="authors">Anurag Bagchi, Zhipeng Bao, Yu-Xiong Wang, <strong>Pavel Tokmakov</strong>*, Martial Hebert*</p>
+        <p class="venue">ICCV, 2025</p>
+        <p class="tldr">REM is a framework for segmenting a wide range of concepts in video that can be described through natural language, leveraging the visual-language representations of video diffusion models.</p>
+        <p class="pub-links">
+          <a href="https://refereverything.github.io/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2410.23287">paper</a><span class="sep">·</span>
+          <a href="https://github.com/miccooper9/ReferEverything">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="img/teasers/codeplexity_133_200.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://ceyzaguirre4.github.io/codeplexity/">Analyzing Question Complexity in Video QA via Visual Program Generation</a></h3>
+        <p class="authors">Cristobal Eyzaguirre, Igor Vasiljevic, Achal Dave, Jiajun Wu, Thomas Kollar, Juan Carlos Niebles, <strong>Pavel Tokmakov</strong></p>
+        <p class="venue">ICML, 2025</p>
+        <p class="tldr">A data-driven approach to analyzing query complexity in Video Question Answering, using the complexity of code generated for visual question answering as a proxy for question difficulty.</p>
+        <p class="pub-links">
+          <a href="https://ceyzaguirre4.github.io/codeplexity/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2505.13429">paper</a><span class="sep">·</span>
+          <a href="https://github.com/ceyzaguirre4/codeplexity">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="https://gcd.cs.columbia.edu/media/teaser_final2.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://gcd.cs.columbia.edu/">Generative Camera Dolly: Extreme Monocular Dynamic Novel View Synthesis <span class="badge">(Oral)</span></a></h3>
+        <p class="authors">Basile Van Hoorick, Rundi Wu, Ege Ozguroglu, Kyle Sargent, Ruoshi Liu, <strong>Pavel Tokmakov</strong>, Achal Dave, Changxi Zheng, Carl Vondrick</p>
+        <p class="venue">ECCV, 2024</p>
+        <p class="tldr">Given a video of any scene, we generate a synchronous video from any other chosen perspective, conditioned on a set of relative camera pose parameters.</p>
+        <p class="pub-links">
+          <a href="https://gcd.cs.columbia.edu/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2405.14868">paper</a><span class="sep">·</span>
+          <a href="https://github.com/basilevh/gcd">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="img/teasers/dreamitate_08_22.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://dreamitate.cs.columbia.edu/">Dreamitate: Real-world Visuomotor Policy Learning via Video Generation</a></h3>
+        <p class="authors">Junbang Liang, Ruoshi Liu, Ege Ozguroglu, Sruthi Sudhakar, Achal Dave, <strong>Pavel Tokmakov</strong>, Shuran Song, Carl Vondrick</p>
+        <p class="venue">CoRL, 2024</p>
+        <p class="tldr">A visuomotor policy learning framework that fine-tunes a video diffusion model on human demonstrations, generating task executions to control robots with improved generalization to novel objects and environments.</p>
+        <p class="pub-links">
+          <a href="https://dreamitate.cs.columbia.edu/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2406.16862">paper</a><span class="sep">·</span>
+          <a href="https://github.com/cvlab-columbia/dreamitate">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="https://yorkucvil.github.io/VTCD/concepts/Figure1/prediction.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://yorkucvil.github.io/VTCD/">Understanding Video Transformers via Universal Concept Discovery <span class="badge">(Spotlight)</span></a></h3>
+        <p class="authors">Matthew Kowal, Achal Dave, Rares Ambrus, Adrien Gaidon, Konstantinos Derpanis, <strong>Pavel Tokmakov</strong></p>
+        <p class="venue">CVPR, 2024</p>
+        <p class="tldr">A concept-based interpretability framework for video transformers: an algorithm that automatically discovers and ranks spatiotemporal concepts in learned representations.</p>
+        <p class="pub-links">
+          <a href="https://yorkucvil.github.io/VTCD/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2401.10831">paper</a><span class="sep">·</span>
+          <a href="https://github.com/YorkUCVIL/VTCD">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="https://gestalt.cs.columbia.edu/static/videos/gestalt.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://gestalt.cs.columbia.edu/">pix2gestalt: Amodal Segmentation by Synthesizing Wholes <span class="badge">(Spotlight)</span></a></h3>
+        <p class="authors">Ege Ozguroglu, Ruoshi Liu, Didac Suris, Dian Chen, Achal Dave, <strong>Pavel Tokmakov</strong>, Carl Vondrick</p>
+        <p class="venue">CVPR, 2024</p>
+        <p class="tldr">A framework for zero-shot amodal segmentation that learns to estimate the shape and appearance of whole objects only partially visible behind occlusions, by leveraging large-scale diffusion priors.</p>
+        <p class="pub-links">
+          <a href="https://gestalt.cs.columbia.edu/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2401.14398">paper</a><span class="sep">·</span>
+          <a href="https://github.com/cvlab-columbia/pix2gestalt">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="img/posts/0123.png" alt="Zero-1-to-3"></div>
+      <div class="pub-body">
+        <h3><a href="https://zero123.cs.columbia.edu/">Zero-1-to-3: Zero-shot One Image to 3D Object</a></h3>
+        <p class="authors">Ruoshi Liu, Rundi Wu, Basile Van Hoorick, <strong>Pavel Tokmakov</strong>, Sergey Zakharov, Carl Vondrick</p>
+        <p class="venue">ICCV, 2023</p>
+        <p class="tldr">A framework for changing the camera viewpoint of an object given just a single RGB image. To perform novel view synthesis in this under-constrained setting, we capitalize on the geometric priors that large-scale diffusion models learn about natural images.</p>
+        <p class="pub-links">
+          <a href="https://zero123.cs.columbia.edu/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2303.11328">paper</a><span class="sep">·</span>
+          <a href="https://github.com/cvlab-columbia/zero123">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="img/posts/1403_cut_corn.gif" alt="VOST"></div>
+      <div class="pub-body">
+        <h3><a href="https://www.vostdataset.org/">Breaking the &ldquo;Object&rdquo; in Video Object Segmentation</a></h3>
+        <p class="authors"><strong>Pavel Tokmakov</strong>, Jie Li, Adrien Gaidon</p>
+        <p class="venue">CVPR, 2023</p>
+        <p class="tldr">VOST is a semi-supervised video object segmentation benchmark that focuses on complex object transformations. Objects in VOST are broken, torn and molded into new shapes, dramatically changing their overall appearance — a major challenge for mainstream, appearance-centric VOS methods.</p>
+        <p class="pub-links">
+          <a href="https://www.vostdataset.org/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2212.06200">paper</a><span class="sep">·</span>
+          <a href="https://github.com/TRI-ML/VOST">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="img/posts/preview1.gif" alt="RAM"></div>
+      <div class="pub-body">
+        <h3><a href="https://arxiv.org/abs/2204.01784">Object Permanence Emerges in a Random Walk along Memory</a></h3>
+        <p class="authors"><strong>Pavel Tokmakov</strong>, Allan Jabri, Jie Li, Adrien Gaidon</p>
+        <p class="venue">ICML, 2022</p>
+        <p class="tldr">A self-supervised objective for learning representations that localize objects under occlusion — a property known as object permanence. Rather than directly supervising the locations of invisible objects, we propose an objective that requires neither human annotation nor assumptions about object dynamics.</p>
+        <p class="pub-links">
+          <a href="https://arxiv.org/abs/2204.01784">paper</a><span class="sep">·</span>
+          <a href="https://github.com/TRI-ML/RAM">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="https://zpbao.github.io/projects/CVPR22-Discovering/image/vid3.gif" alt="Discovering Objects that Can Move"></div>
+      <div class="pub-body">
+        <h3><a href="https://zpbao.github.io/projects/CVPR22-Discovering/">Discovering Objects that Can Move</a></h3>
+        <p class="authors">Zhipeng Bao*, <strong>Pavel Tokmakov</strong>*, Allan Jabri, Yu-Xiong Wang, Adrien Gaidon, Martial Hebert</p>
+        <p class="venue">CVPR, 2022</p>
+        <p class="tldr">Existing object discovery methods rely on appearance cues — color, texture, location — and fail in cluttered scenes. We instead focus on dynamic objects: entities capable of moving independently in the world, using motion as a bottom-up cue.</p>
+        <p class="pub-links">
+          <a href="https://zpbao.github.io/projects/CVPR22-Discovering/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2203.10159">paper</a><span class="sep">·</span>
+          <a href="https://github.com/zpbao/Discovery_Obj_Move">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><video autoplay muted loop playsinline preload="metadata"><source src="img/teasers/permatrack_07_20.mp4" type="video/mp4"></video></div>
+      <div class="pub-body">
+        <h3><a href="https://arxiv.org/abs/2103.14258">Learning to Track with Object Permanence</a></h3>
+        <p class="authors"><strong>Pavel Tokmakov</strong>, Jie Li, Wolfram Burgard, Adrien Gaidon</p>
+        <p class="venue">ICCV, 2021</p>
+        <p class="tldr">PermaTrack extends tracking-by-detection with object permanence — the ability to reason about objects that are temporarily invisible due to occlusion or leaving the field of view — for online multi-object tracking.</p>
+        <p class="pub-links">
+          <a href="https://arxiv.org/abs/2103.14258">paper</a><span class="sep">·</span>
+          <a href="https://github.com/TRI-ML/permatrack">code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <div class="teaser"><img src="img/posts/tao.png" alt="TAO"></div>
+      <div class="pub-body">
+        <h3><a href="http://taodataset.org/">TAO: A Large-Scale Benchmark for Tracking Any Object <span class="badge">(Spotlight)</span></a></h3>
+        <p class="authors">Achal Dave, Tarasha Khurana, <strong>Pavel Tokmakov</strong>, Cordelia Schmid, Deva Ramanan</p>
+        <p class="venue">ECCV, 2020</p>
+        <p class="tldr">Multi-object tracking benchmarks had long focused on a handful of categories. TAO is a diverse dataset for Tracking Any Object: 2,907 high-resolution videos covering 833 categories, with an extensive evaluation of state-of-the-art trackers in the open-world setting.</p>
+        <p class="pub-links">
+          <a href="http://taodataset.org/">project</a><span class="sep">·</span>
+          <a href="https://arxiv.org/abs/2005.10356">paper</a><span class="sep">·</span>
+          <a href="https://github.com/TAO-Dataset/tao">code</a>
+        </p>
+      </div>
+    </article>
+
+    <details class="earlier">
+      <summary>Show earlier work</summary>
+
+      <article class="pub">
+        <div class="teaser"><img src="img/posts/comp1.png" alt="Compositional Few-Shot"></div>
+        <div class="pub-body">
+          <h3><a href="https://arxiv.org/abs/1812.09213">Learning Compositional Representations for Few-Shot Recognition</a></h3>
+          <p class="authors"><strong>Pavel Tokmakov</strong>, Yu-Xiong Wang, Martial Hebert</p>
+          <p class="venue">ICCV, 2019</p>
+          <p class="tldr">Deep learning representations lack compositionality, which is instrumental for the human ability to learn novel concepts from a few examples. We investigate approaches to enforcing this property during training, yielding significant improvements in the few-shot setting.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/1812.09213">paper</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="teaser"><img src="img/posts/ava1.png" alt="Structured Action Detection"></div>
+        <div class="pub-body">
+          <h3><a href="https://arxiv.org/abs/1812.03544">A Structured Model For Action Detection</a></h3>
+          <p class="authors">Yubo Zhang, <strong>Pavel Tokmakov</strong>, Cordelia Schmid, Martial Hebert</p>
+          <p class="venue">CVPR, 2019</p>
+          <p class="tldr">A dominant paradigm in vision is training generic models on large datasets. We instead integrate domain knowledge into the architecture of an action detection model, achieving significant improvements over the state-of-the-art without much parameter tuning.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/1812.03544">paper</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="teaser"><img src="img/posts/lvo.png" alt="LVO"></div>
+        <div class="pub-body">
+          <h3><a href="http://thoth.inrialpes.fr/research/lvo/">Learning Video Object Segmentation with Visual Memory <span class="badge">(Oral)</span></a></h3>
+          <p class="authors"><strong>Pavel Tokmakov</strong>, Karteek Alahari, Cordelia Schmid</p>
+          <p class="venue">ICCV, 2017</p>
+          <p class="tldr">Motion segmentation methods identify moving objects but fail once objects stop moving. We propose a two-stream architecture that combines motion cues with an appearance-based visual memory module, segmenting objects before they start and after they stop moving.</p>
+          <p class="pub-links">
+            <a href="http://thoth.inrialpes.fr/research/lvo/">project</a><span class="sep">·</span>
+            <a href="https://arxiv.org/abs/1704.05737">paper</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="teaser"><img src="img/teasers/mpnet.png" alt="MP-Net"></div>
+        <div class="pub-body">
+          <h3><a href="http://thoth.inrialpes.fr/research/mpnet/">Learning Motion Patterns in Videos</a></h3>
+          <p class="authors"><strong>Pavel Tokmakov</strong>, Karteek Alahari, Cordelia Schmid</p>
+          <p class="venue">CVPR, 2017</p>
+          <p class="tldr">The first learning-based approach for motion segmentation: separating independently moving objects from the background in videos. The model learns to predict per-pixel motion masks directly from optical flow.</p>
+          <p class="pub-links">
+            <a href="http://thoth.inrialpes.fr/research/mpnet/">project</a><span class="sep">·</span>
+            <a href="https://arxiv.org/abs/1612.07217">paper</a>
+          </p>
+        </div>
+      </article>
+
+    </details>
+
+  </section>
+
+  <footer>
+    <p>* equal contribution &nbsp;·&nbsp; last updated Sept 2026</p>
+  </footer>
+
+</main>
+</body>
+</html>
