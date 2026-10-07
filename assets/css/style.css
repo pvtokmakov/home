@@ -325,8 +325,12 @@ footer {
   main { padding: 32px 18px 64px; }
   header { flex-direction: column; gap: 20px; align-items: center; text-align: left; }
   .headshot { width: 170px; height: 170px; }
-  .pub { flex-direction: column; gap: 14px; padding: 18px; }
+  /* Stretch children to full width (default flex-start on desktop would left-align them) */
+  .pub { flex-direction: column; gap: 14px; padding: 18px; align-items: stretch; }
   .teaser { max-width: 100%; }
+  /* Override desktop width constraints so narrow-teaser pubs fill mobile width */
+  .pub.pub-narrow-teaser > .teaser { flex: 1 1 auto; width: 100%; max-width: 100%; }
+  .pub.pub-narrow-teaser > .teaser > video { max-width: 100%; }
   /* Only empty placeholders get a forced aspect */
   .teaser:not(:has(img)):not(:has(video)) { aspect-ratio: 16 / 9; }
   /* Real media teasers scale to natural aspect — drop desktop height caps */
